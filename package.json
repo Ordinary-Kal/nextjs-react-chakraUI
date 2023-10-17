@@ -9,7 +9,8 @@
     "lint": "next lint",
     "preinstall": "husky install",
     "format": "prettier --cache --write .",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "test": "jest"
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.1.5",
@@ -26,8 +27,14 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/jest": "^29.5.5",
     "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/react": "^18.2.28",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "13.5.4",
