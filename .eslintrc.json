@@ -1,4 +1,11 @@
 {
+  "env": {
+    // 전역 변수 사용을 정의합니다. 추가하지 않으면 ESLint 규칙에 걸리게 됩니다.
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
   "extends": "next/core-web-vitals",
   "rules": {
     "no-var": "error", // var 금지
@@ -7,5 +14,10 @@
     "eqeqeq": "error", // 일치 연산자 사용 필수
     "dot-notation": "error", // 가능하다면 dot notation 사용
     "no-unused-vars": "error" // 사용하지 않는 변수 금지
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // 현재 사용하고 있는 react 버전을 eslint-plugin-react가 자동으로 감지합니다.
+    }
   }
 }

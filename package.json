@@ -10,7 +10,8 @@
     "preinstall": "husky install",
     "format": "prettier --cache --write .",
     "lint-staged": "lint-staged",
-    "test": "jest"
+    "test": "jest",
+    "push": "npm run test && npm run build"
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.1.5",

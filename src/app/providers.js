@@ -4,6 +4,7 @@ import { CacheProvider } from '@chakra-ui/next-js';
 import { ChakraProvider } from '@chakra-ui/react';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { queryClient } from '@/config/react-query-client';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 function Providers({ children }) {
   return (
@@ -11,6 +12,7 @@ function Providers({ children }) {
       <CacheProvider>
         <ChakraProvider resetCSS>{children}</ChakraProvider>
       </CacheProvider>
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
 }
