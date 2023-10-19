@@ -252,15 +252,23 @@ const variants = {
 };
 
 const baseStyle = defineStyle({
-  w: '196px',
+  w: '328px',
   h: 'fit-content',
 
   _focus: { boxShadow: 'none' },
 });
 
+const sizes = {
+  lg: defineStyle({
+    px: '40px',
+    py: '14px',
+  }),
+};
+
 export const Button = {
   baseStyle,
   variants,
+  sizes,
   defaultProps: {
     variant: 'primaryFilled',
     size: 'lg',
