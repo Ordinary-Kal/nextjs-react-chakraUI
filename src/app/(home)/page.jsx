@@ -1,6 +1,6 @@
 'use client';
 
-import { Button } from '@chakra-ui/react';
+import { Button, Text } from '@chakra-ui/react';
 import { usePostsGetAll } from '@/axios/Posts/Posts.query';
 
 const getDataPosts = async () => {
@@ -36,6 +36,7 @@ export default function Home() {
 
   return (
     <>
+      <Text textStyle='Subtitle_B'>데이터 정보</Text>
       <Button onClick={() => mutate()}>Axios-React-Query</Button>
       <Button onClick={handleButtonMswClick}>MSW</Button>
     </>
