@@ -1,3 +1,8 @@
+/* 프로젝트 시작시 삭제 예정
+  1. MSW 예제 코드
+  2. react-query 예제코드
+  3. 기본 스타일링 적용된 컴포넌트 확인 코드 -> 스토리북으로 옮길 예정
+*/
 'use client';
 
 import { Button, Text } from '@chakra-ui/react';
